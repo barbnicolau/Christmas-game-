@@ -7,6 +7,8 @@ window.onload = () => {
   const lifeElement = document.getElementById("life");
   const presents = [];
   const socksUgly = [];
+  const music = new Audio("../song/Christmas Village - Aaron Kenny.mp3");
+  music.volume = 0.3;
 
   let animationId = null;
   let frames = 0;
@@ -24,6 +26,7 @@ window.onload = () => {
   //inicio do jogo
   function startGame() {
     init();
+    music.play();
     animationId = setInterval (updateCanvas,20)
     //animationId = requestAnimationFrame(updateCanvas);
     //updateCanvas();
@@ -33,6 +36,8 @@ window.onload = () => {
   function resetGame() {
     stopGame();
     clearCanvas();
+    music.pause();
+    music.currentTime = 0;
     placeHolder();
     scoreElement.innerHTML = 0;
     lifeElement.innerHTML = 0;
