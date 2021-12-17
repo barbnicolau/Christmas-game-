@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Christmas</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Christmas</title>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
- <script src="./js/script.js"></script>    
+<body id="background">
+  <div id="game-board">
+    <div class="container">
+      <div id="score-board">Pontos:<span id="score">0</span></div>
+      <div id="life-board">Vida:<span id="life">1</span></div>
+    </div>
+    
+    <canvas id="canvas" width="700" height="400"> 
+    </canvas>
+    <button id="start" class="btn">Iniciar</button>
+    <button id="reset" class="btn">Resetar</button>
+  </div>
+  <section id="game-board"></section> 
+
+  <div id="game-rules">
+
+    <div id="rules-box">
+      <div class="title">
+        <h1>Salve o Natal!</h1>
+        <h2>Siga as instruções abaixo e ajude o papai Noel a se preparar para o Natal</h2>
+      </div>
+      
+      <p><img class="present" src="./images/present.png">Colete os presentes de Natal para fazer pontos.</p>
+      <p><img class="socks" src="./images/uglySocks.png">Tome cuidado para não pegar meias!</p>
+      <p><img class="santa" src="images/santa.png">Movimente o Papai Noel para direita e esquerda utilizando as setas do teclado.</p>
+    </div>
+    
+  <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Rockane";
+  src: url('../styles/Fonts/Rockane.ttf');
+}
+
+@font-face {
+  font-family: "song";
+  src: url('../styles/Fonts/song.ttf');
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url('../styles/Fonts/Cocogoose-Classic-Medium-trial.ttf');
+}
+
+
+body {
+  display: flex;
+  margin: 0;
+  color: white;
+  background-image: linear-gradient(to bottom, darkslateblue, mediumslateblue, steelblue, cornflowerblue);
+  background-repeat: no-repeat;
+  background-size: cover; 
+} 
+
+.title {
+  padding-top: 10px ;
+  padding-left: 20px;
+  padding-right: 50px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+
+h1 {
+  font-family: "Rockane";
+  font-weight:normal;
+  font-size: 60px;
+  color: grey;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Cocogoose";
+    font-weight:bolder;
+    margin-top: 40px;
+    margin-left: 60px;
+    color:gray;   
+}
+
+#game-board {
+  width: 800px;
+  height: 700px;
+}
+
+#canvas {
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+#game-rules {
+  width: 800px;
+  height: 700px;
+}
+
+#rules-box {
+  width: 500px;
+  height: 650px;
+  border-radius: 50px;
+  background-size: cover;
+  background-image: url("../Images/letter.png");
+  box-shadow: inset 0 0 1em grey;
+  margin-top: 30px;
+  margin-right: 90px;
+}
+
+.btn {
+  padding: 15px 50px 10px 50px;
+  font-size: 30px;
+  font-family: "Song";
+  font-weight:bolder;
+  background-color: aliceblue;
+  box-shadow: inset 0 0 1em gray;
+  border-style: none;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-left: 230px;
+  margin-right: -150px;
+  color: blueviolet;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+#score-board {
+  font-family: "Song";
+  font-size: 30px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+#life-board {
+  font-family: "Song";
+  margin-right: 80px;
+  margin-left: 50px;
+}
+
+#game-rules p { 
+  font-size: 20px;
+  font-family: "Cocogoose";
+  font-weight:bolder;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-left: 90px;
+  padding-right:50px;
+  color:grey;
+}
+
+#canvas {
+  margin-top: 10px;
+}
+
+.present {
+  max-width: 40px;
+}
+
+.socks {
+  max-width: 40px;
+}
+
+.santa {
+  max-width: 40px;
+}
