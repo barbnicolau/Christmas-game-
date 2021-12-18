@@ -164,40 +164,26 @@ window.onload = () => {
       this.width = w;
       this.height = h;
       this.speed = 60;
-      this.direction = "esquerda";
 
-      const imgA = new Image();
-      imgA.onload = () => {
-        this.imgA = imgA;
+      const img = new Image();
+      img.onload = () => {
+        this.img = img;
       };
-      imgA.src = "./images/santa.png";
-
-      const imgB = new Image();
-      imgB.onload = () => {
-        this.imgB = imgB;
-      };
-      imgB.src = "./images/santa.png";
+      img.src = "./images/santa.png";
     }
 
     draw() {
-      if (this.direction === "esquerda") {
-        ctx.drawImage(this.imgA, this.posX, this.posY, this.width, this.height);
+        ctx.drawImage(this.img, this.posX, this.posY, this.width, this.height);
       }
-      if (this.direction === "direita") {
-        ctx.drawImage(this.imgB, this.posX, this.posY, this.width, this.height);
-      }
-    }
 
     moveLeft() {
       if (this.posX > 20) {
-        this.direction = "esquerda";
         this.posX -= this.speed;
       }
     }
 
     moveRight() {
       if (this.posX < 400) {
-        this.direction = "direita";
         this.posX += this.speed;
       }
     }
