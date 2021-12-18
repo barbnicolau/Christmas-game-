@@ -7,7 +7,7 @@ window.onload = () => {
   const lifeElement = document.getElementById("life");
   const presents = [];
   const socksUgly = [];
-  const music = new Audio("../song/Christmas Village - Aaron Kenny.mp3");
+  const music = new Audio("./song/Christmas Village - Aaron Kenny.mp3");
   music.volume = 0.3;
 
   let animationId = null;
@@ -95,7 +95,7 @@ window.onload = () => {
     ctx.font = "50px Winter Christmas";
 
     let img = new Image();
-    img.src = "../Images/winterbg.png";
+    img.src = "./Images/winterbg.png";
 
     img.onload = function () {
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -111,7 +111,7 @@ window.onload = () => {
     ctx.font = "50px Arial";
 
     let img = new Image();
-    img.src = "../Images/gameover.jpg";
+    img.src = "./Images/gameover.jpg";
 
     img.onload = function () {
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
@@ -139,22 +139,22 @@ window.onload = () => {
   
 
   class Background {
-    constructor() {
+    constructor(source) {
       this.posX = 0;
       this.posY = 0;
 
       const img = new Image();
+      img.src = source;
 
       img.onload = () => {
         this.img = img;
       };
-      img.src = "../Images/winterbg.png";
     }
     draw() {
       ctx.drawImage(this.img, this.posX, this.posY, canvas.width, 450);
     }
   }
-  const background = new Background();
+  const background = new Background("./Images/winterbg.png");
 
   class Santa {
     constructor(x, y, w, h) {
@@ -169,7 +169,7 @@ window.onload = () => {
       img.onload = () => {
         this.img = img;
       };
-      img.src = "../Images/santa.png";
+      img.src = "./Images/santa.png";
     }
 
     draw() {
@@ -260,7 +260,7 @@ window.onload = () => {
     const posX = Math.floor(Math.random() * 400) + 20;
 
     presents.push(
-      new Obstacle("../Images/present.png", posX, this.posY, 50, 50, 3)
+      new Obstacle("./Images/present.png", posX, this.posY, 50, 50, 3)
     );
   }
 
@@ -278,7 +278,7 @@ window.onload = () => {
     const posX = Math.floor(Math.random() * 400) + 20;
 
     socksUgly.push(
-      new Obstacle("../Images/uglysocks.png", posX, this.posY, 60, 60, 2)
+      new Obstacle("./Images/uglysocks.png", posX, this.posY, 60, 60, 2)
     );
   }
 
