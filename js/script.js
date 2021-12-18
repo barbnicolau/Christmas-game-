@@ -92,7 +92,7 @@ window.onload = () => {
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "white";
-    ctx.font = "50px Winter Christmas";
+    ctx.font = "80px Winter Christmas";
 
     let img = new Image();
     img.src = "./Images/winterbg.png";
@@ -100,7 +100,7 @@ window.onload = () => {
     img.onload = function () {
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-      ctx.fillText("Vamos jogar!", 200, 200);
+      ctx.fillText("Vamos jogar!", 220, 240);
     };
   }
 
@@ -108,7 +108,7 @@ window.onload = () => {
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "white";
-    ctx.font = "50px Arial";
+    ctx.font = "80px Winter Christmas";
 
     let img = new Image();
     img.src = "./Images/gameover.jpg";
@@ -116,7 +116,7 @@ window.onload = () => {
     img.onload = function () {
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-      ctx.fillText("Fim do Jogo!", 200, 200);
+      ctx.fillText("Fim do Jogo!", 220, 240);
     };
   }
 
