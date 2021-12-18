@@ -169,7 +169,7 @@ window.onload = () => {
       img.onload = () => {
         this.img = img;
       };
-      img.src = "./images/santa.png";
+      img.src = "./Images/santa.png";
     }
 
     draw() {
