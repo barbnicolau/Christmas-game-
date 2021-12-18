@@ -19,3 +19,4 @@ O jogo termina caso o Papai Noel acabe esbarrando em alguma meia.
 Linguagens 
 
 • Jogo feito usando HTML, CSS e JavaScript
+O canvas também foi utilizado.
