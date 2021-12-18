@@ -154,7 +154,7 @@ window.onload = () => {
       ctx.drawImage(this.img, this.posX, this.posY, canvas.width, 450);
     }
   }
-  const background = new Background("./Images/winterbg.png");
+  const background = new Background("../Images/winterbg.png");
 
   class Santa {
     constructor(x, y, w, h) {
@@ -169,7 +169,7 @@ window.onload = () => {
       img.onload = () => {
         this.img = img;
       };
-      img.src = "./Images/santa.png";
+      img.src = "../Images/santa.png";
     }
 
     draw() {
@@ -260,7 +260,7 @@ window.onload = () => {
     const posX = Math.floor(Math.random() * 400) + 20;
 
     presents.push(
-      new Obstacle("./Images/present.png", posX, this.posY, 50, 50, 3)
+      new Obstacle("../Images/present.png", posX, this.posY, 50, 50, 3)
     );
   }
 
@@ -278,7 +278,7 @@ window.onload = () => {
     const posX = Math.floor(Math.random() * 400) + 20;
 
     socksUgly.push(
-      new Obstacle("./Images/uglysocks.png", posX, this.posY, 60, 60, 2)
+      new Obstacle("../Images/uglysocks.png", posX, this.posY, 60, 60, 2)
     );
   }
 
