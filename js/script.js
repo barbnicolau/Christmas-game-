@@ -139,22 +139,22 @@ window.onload = () => {
   
 
   class Background {
-    constructor(source) {
+    constructor() {
       this.posX = 0;
       this.posY = 0;
 
       const img = new Image();
-      img.src = source;
 
       img.onload = () => {
         this.img = img;
       };
+      img.src = "../Images/winterbg.png";
     }
     draw() {
       ctx.drawImage(this.img, this.posX, this.posY, canvas.width, 450);
     }
   }
-  const background = new Background("../Images/winterbg.png");
+  const background = new Background();
 
   class Santa {
     constructor(x, y, w, h) {
